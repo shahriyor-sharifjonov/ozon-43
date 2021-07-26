@@ -15,35 +15,35 @@
         <div class="ozon"> 
           <div class="ozon__row">
             <p class="ozon__title">Проект</p>
-            <div class="ozon__item"> <img class="ozon__item__img" src="images/ozon.png" alt=""></div>
-            <div class="ozon__item disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
-            <div class="ozon__item disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
-            <div class="ozon__item disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
-            <div class="ozon__item disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
-            <div class="ozon__item disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
-            <div class="ozon__item disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
-            <div class="ozon__item disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
-            <div class="ozon__item disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
-            <div class="ozon__item disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
-            <div class="ozon__item disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
-            <div class="ozon__item disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
-            <div class="ozon__item disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i current"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item-i"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
           </div>
           <div class="ozon__row"> 
             <p class="ozon__title">Раядел</p>
-            <div class="ozon__item"> 
+            <div class="ozon__item limited-nav">
               <p class="ozon__item__p">Статьи блогов</p>
             </div>
-            <div class="ozon__item"> 
+            <div class="ozon__item limited-nav">
               <p class="ozon__item__p">Страницы</p>
             </div>
-            <div class="ozon__item"> 
+            <div class="ozon__item limited-nav">
               <p class="ozon__item__p">Товары</p>
             </div>
-            <div class="ozon__item"> 
+            <div class="ozon__item limited-nav">
               <p class="ozon__item__p">Обьявления</p>
             </div>
-            <div class="ozon__item current">
+            <div class="ozon__item current limited-nav">
               <p class="ozon__item__p">Описания разделов</p>
             </div>
           </div>
@@ -846,8 +846,13 @@
                         <path d="M9.6015 8.49636L4.83878 1.81909C4.42514 1.25182 3.77514 0.909088 3.07787 0.909088C1.31696 0.909088 0.288776 2.89454 1.31696 4.32454L4.77969 9.18182L1.31696 14.0391C0.288776 15.4691 1.31696 17.4545 3.07787 17.4545C3.77514 17.4545 4.43696 17.1118 4.83878 16.5445L9.61332 9.86727C9.89696 9.45363 9.89696 8.91 9.6015 8.49636Z"></path>
                       </svg>
                     </button>
-                    <div class="dropdown pagination__dropdown"><a class="dropdown-toggle pagination__dropdown__button" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuLink">Показать по 10  </a>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Показать по 20</a><a class="dropdown-item" href="#">Показать по 30</a><a class="dropdown-item" href="#">Показать по 40</a></div>
+                    <div class="dropdown pagination__dropdown">
+                      <button class="dropdown-toggle pagination__dropdown__button" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuLink">Показать по 10  <span class="caret"></span></button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li class="dropdown-item" onclick="dropdown1(this.innerHTML);" href="#">Показать по 20</li>
+                        <li class="dropdown-item" onclick="dropdown1(this.innerHTML);" href="#">Показать по 30</li>
+                        <li class="dropdown-item" onclick="dropdown1(this.innerHTML);" href="#">Показать по 40</li>
+                      </ul>
                     </div>
                   </div>
                   <div class="pagination__right"> 

@@ -21,12 +21,12 @@ mixin pagination()
           path(d='M19.0561 8.49636L14.2815 1.81909C13.8797 1.25182 13.2297 0.909088 12.5325 0.909088C10.7715 0.909088 9.75518 2.89454 10.7715 4.32454L14.2343 9.18182L10.7715 14.0391C9.74337 15.4691 10.7715 17.4545 12.5325 17.4545C13.2297 17.4545 13.8915 17.1118 14.2934 16.5445L19.0679 9.86727C19.3515 9.45363 19.3515 8.91 19.0561 8.49636Z')
           path(d='M9.6015 8.49636L4.83878 1.81909C4.42514 1.25182 3.77514 0.909088 3.07787 0.909088C1.31696 0.909088 0.288776 2.89454 1.31696 4.32454L4.77969 9.18182L1.31696 14.0391C0.288776 15.4691 1.31696 17.4545 3.07787 17.4545C3.77514 17.4545 4.43696 17.1118 4.83878 16.5445L9.61332 9.86727C9.89696 9.45363 9.89696 8.91 9.6015 8.49636Z')
       .dropdown.pagination__dropdown
-        a(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')#dropdownMenuLink.dropdown-toggle.pagination__dropdown__button
-          | Показать по 10  
-        .dropdown-menu(aria-labelledby='dropdownMenuLink')
-          a.dropdown-item(href='#') Показать по 20
-          a.dropdown-item(href='#') Показать по 30
-          a.dropdown-item(href='#') Показать по 40
+        button(role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')#dropdownMenuLink.dropdown-toggle.pagination__dropdown__button Показать по 10  
+          span.caret
+        ul.dropdown-menu(aria-labelledby='dropdownMenuLink')
+          li(onclick="dropdown1(this.innerHTML);").dropdown-item(href='#') Показать по 20
+          li(onclick="dropdown1(this.innerHTML);").dropdown-item(href='#') Показать по 30
+          li(onclick="dropdown1(this.innerHTML);").dropdown-item(href='#') Показать по 40
     .pagination__right  
       p.pagination__p Всего элементов 130
       button.save-btn 

@@ -35,3 +35,29 @@ $( function() {
     return date;
   }
 } );
+
+$(function() {
+  $('.ozon__item-i').click(function() {
+    $('.ozon__item-i').not(this).removeClass('current')
+    $(this).toggleClass('current')
+  })
+})
+
+$(function() {
+  $('.limited-nav').click(function() {
+    $('.limited-nav').not(this).removeClass('current')
+    $(this).toggleClass('current')
+  })
+})
+
+$(function() {
+  $('.pagination__text').click(function() {
+    $('.pagination__text').not(this).removeClass('current')
+    $(this).toggleClass('current')
+  })
+})
+
+function dropdown1(val) {
+  var y = document.getElementsByClassName('pagination__dropdown__button');
+  var aNode = y[0].innerHTML = val + ' <span class="caret"></span>'; // Append 
+}

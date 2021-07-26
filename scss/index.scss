@@ -441,9 +441,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 200ms ease;
 
-    &.disabled{
+    &-i{
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid #8B8B8B;
+      max-width: 150px;
+      margin-right: 4px;
+      cursor: pointer;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border: none;
+      border: 1px solid transparent;
+      transition: 200ms ease;
+
+      &.current{
+        border: 1px solid #B4B4B4;
+      }
     }
 
     &.current{
@@ -472,7 +489,7 @@ body{
 .dropdown{
 
   &-item{
-    color: #B4B4B4;
+    color: #494A4A;
     transition: 200ms ease;
     cursor: pointer;
   }
@@ -582,10 +599,12 @@ body{
       border-radius: 6px;
       height: 38px;
       padding: 0 16px;
-      color: #9F9F9F;
+      color: #494A4A;
+      border: none;
+      width: 180px;
 
       &:hover{
-        color: #9F9F9F;
+        color: #494A4A;
         text-decoration: none;
       }
     }

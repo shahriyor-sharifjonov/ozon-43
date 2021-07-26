@@ -493,9 +493,33 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
 }
-.ozon__item.disabled {
+.ozon__item-i {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #8B8B8B;
+  max-width: 150px;
+  margin-right: 4px;
+  cursor: pointer;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
+  border: 1px solid transparent;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+.ozon__item-i.current {
+  border: 1px solid #B4B4B4;
 }
 .ozon__item.current {
   background: #00498D;
@@ -515,7 +539,7 @@ body {
 }
 
 .dropdown-item {
-  color: #B4B4B4;
+  color: #494A4A;
   -webkit-transition: 200ms ease;
   transition: 200ms ease;
   cursor: pointer;
@@ -632,10 +656,12 @@ body {
   border-radius: 6px;
   height: 38px;
   padding: 0 16px;
-  color: #9F9F9F;
+  color: #494A4A;
+  border: none;
+  width: 180px;
 }
 .pagination__dropdown__button:hover {
-  color: #9F9F9F;
+  color: #494A4A;
   text-decoration: none;
 }
 
