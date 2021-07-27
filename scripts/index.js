@@ -57,6 +57,13 @@ $(function() {
   })
 })
 
+$(function() {
+  $('.seo-meta__body').click(function() {
+    $('.seo-meta__body').not(this).removeClass('current')
+    $(this).toggleClass('current')
+  })
+})
+
 function dropdown1(val) {
   var y = document.getElementsByClassName('pagination__dropdown__button');
   var aNode = y[0].innerHTML = val + ' <span class="caret"></span>'; // Append 

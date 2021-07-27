@@ -624,6 +624,11 @@ body{
 }
 
 .seo-meta{
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-left: 30px;
+  padding-right: 35px;
+
 
   &__header{
 
@@ -641,6 +646,23 @@ body{
   }
 
   &__body{
+    cursor: pointer;
+    // margin-left: -30px;
+    // margin-right: -30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    border-radius: 6px;
+    margin: 7.5px -30px 7.5px -15px;
+    transition: 200ms ease;
+
+    &:hover{
+      background: rgba(237, 237, 237, 0.501);
+    }
+    &.current{
+      background: rgba(237, 237, 237, 0.501);
+    }
 
     &__item{
       display: flex;
@@ -648,9 +670,8 @@ body{
       justify-content: center;
       position: relative;
       background: #fff;
-      margin-left: 15px;
       padding: 0;
-      margin-bottom: 30px;
+      margin: 0 15px 0 0;
 
       &.small{
         max-width: 50px;
@@ -682,6 +703,7 @@ body{
         border-radius: 6px;
         z-index: 1;
         padding-left: 10px;
+        z-index: 1;
       }
 
       &__right{
@@ -695,7 +717,7 @@ body{
         padding: 0 10px 0 13px;
         border-radius: 0 6px 6px 0;
         margin-left: -3px;
-        z-index: -1;
+        z-index: 0;
       }
 
       &__res{
